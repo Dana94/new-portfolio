@@ -1,16 +1,20 @@
 <template>
   <div id="app">
     <Menu></Menu>
+    <Projects></Projects>
   </div>
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
+import Menu from './components/Menu.vue';
+import Projects from './components/Projects.vue'
+
 
 export default {
   name: 'app',
   components: {
-    Menu
+    Menu,
+    Projects
   }
 }
 </script>
@@ -18,7 +22,7 @@ export default {
 <style>
 #app {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 75%;
   font-family: sans-serif;
 }
 </style>

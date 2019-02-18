@@ -24,6 +24,9 @@ export default {
 <style scoped>
 .container {
     text-align: center;
+    position: fixed;
+    left: 50px;
+    width: 177px;
 }
 
 .social {
@@ -33,5 +36,6 @@ export default {
 
 a {
     color: #000000;
+    margin: 0 .5rem;
 }
 </style>
