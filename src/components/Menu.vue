@@ -66,4 +66,8 @@ a {
   color: #000000;
   margin: 0 0.5rem;
 }
+
+i {
+  margin-bottom: 1rem;
+}
 </style>
