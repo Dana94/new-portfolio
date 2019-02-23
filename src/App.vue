@@ -40,5 +40,6 @@ export default {
   display: grid;
   grid-template-columns: 25% 75%;
   font-family: sans-serif;
+  background-color: #f9f9f9;
 }
 </style>
