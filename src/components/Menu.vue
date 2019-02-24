@@ -7,19 +7,19 @@
     <h2 @click="select('Skills')">Skills</h2>
     <h2 @click="select('Projects')">Projects</h2>
     <div class="social">
-      <a href="https://github.com/Dana94">
+      <a href="https://github.com/Dana94" target="_blank">
         <i class="fab fa-github fa-2x"></i>
       </a>
-      <a href="https://www.linkedin.com/in/danaottaviani/">
+      <a href="https://www.linkedin.com/in/danaottaviani/" target="_blank">
         <i class="fab fa-linkedin-in fa-2x"></i>
       </a>
-      <a href>
+      <a href="" target="_blank">
         <i class="fas fa-file fa-2x"></i>
       </a>
-      <a href="mailto:dana.ottaviani@gmail.com">
+      <a href="mailto:dana.ottaviani@gmail.com" target="_blank">
         <i class="fas fa-envelope fa-2x"></i>
       </a>
-      <a href>
+      <a href="https://www.freecodecamp.org/dana94" target="_blank">
         <i class="fab fa-free-code-camp fa-2x"></i>
       </a>
     </div>
@@ -32,9 +32,7 @@ import { EventBus } from "../main.js";
 export default {
   name: "Menu",
   data() {
-    return {
-      //selected: "Projects" //default
-    };
+    return {};
   },
   methods: {
     select(menuItem) {
@@ -69,5 +67,17 @@ a {
 
 i {
   margin-bottom: 1rem;
+}
+
+.fa-linkedin-in:hover {
+  color: #0077b5;
+}
+
+.fa-github:hover {
+  color: #28a745;
+}
+
+.fa-free-code-camp:hover {
+  color: #006400;
 }
 </style>
