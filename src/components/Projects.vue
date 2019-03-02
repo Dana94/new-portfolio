@@ -1,29 +1,37 @@
 <template>
-    <div class="container">
-        <div v-for="i in count" :key="i.index"></div>
-    </div>
+  <div class="container">
+    <div v-for="i in count" :key="i.index"></div>
+  </div>
 </template>
 <script>
 export default {
-    data: function(){
-        return {
-            count: 27
-        }
-    }
-}
+  data: function() {
+    return {
+      count: 27
+    };
+  }
+};
 </script>
 <style scoped>
 .container {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+  height: 97vh;
+  grid-column-start: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    margin: 1rem;
-    height: 97vh;
     grid-column-start: 2;
+  }
 }
 
 .container div {
-    border: 1px solid;
+  border: 1px solid;
+  height: 13vh;
 }
 </style>
 

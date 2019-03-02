@@ -13,7 +13,7 @@
       <a href="https://www.linkedin.com/in/danaottaviani/" target="_blank">
         <i class="fab fa-linkedin-in fa-2x"></i>
       </a>
-      <a href="" target="_blank">
+      <a href="https://docs.google.com/document/d/1Oo7dxyvFD4rnVWkhZn1wP6BzO_lNRR_iGHxegOg6Dfw/edit?usp=sharing" target="_blank">
         <i class="fas fa-file fa-2x"></i>
       </a>
       <a href="mailto:dana.ottaviani@gmail.com" target="_blank">

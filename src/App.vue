@@ -38,7 +38,7 @@ export default {
 <style>
 #app {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr;
   font-family: sans-serif;
   /* background-color: #f9f9f9; */
 }
@@ -46,5 +46,11 @@ export default {
 html {
   height: 100%;
   background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 768px) {
+  #app {
+    grid-template-columns: 25% 75%;
+  }
 }
 </style>

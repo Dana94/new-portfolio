@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Skills</h1>
+    <h1>Technologies and Frameworks</h1>
     <div class="skills">
       <i class="fab fa-html5 fa-7x"></i>
       <i class="fab fa-css3-alt fa-7x"></i>
@@ -8,6 +8,7 @@
       <i class="fab fa-vuejs fa-7x"></i>
       <i class="fab fa-node fa-7x"></i>
       <i class="fab fa-sass fa-7x"></i>
+      <img src="../assets/icons/bootstrap-solid.svg" class="bootstrap-icon">
     </div>
   </div>
 </template>
@@ -29,7 +30,8 @@ export default {};
   }
 }
 
-i {
+i,
+.bootstrap-icon {
   display: flex;
   justify-content: center;
 }
@@ -52,6 +54,12 @@ i {
 
 .fa-css3-alt {
   color: #1673b6;
+}
+
+.bootstrap-icon {
+  width: 140px;
+  height: 112px;
+  justify-self: center;
 }
 </style>
 
