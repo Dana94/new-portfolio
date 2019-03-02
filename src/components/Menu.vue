@@ -3,9 +3,11 @@
     <h1>Dana
       <br>Ottaviani
     </h1>
-    <h2 @click="select('About')">About</h2>
-    <h2 @click="select('Skills')">Skills</h2>
-    <h2 @click="select('Projects')">Projects</h2>
+    <div class="menu-links">
+      <h2 @click="select('About')">About</h2>
+      <h2 @click="select('Skills')">Skills</h2>
+      <h2 @click="select('Projects')">Projects</h2>
+    </div>
     <div class="social">
       <a href="https://github.com/Dana94" target="_blank">
         <i class="fab fa-github fa-2x"></i>
@@ -13,7 +15,10 @@
       <a href="https://www.linkedin.com/in/danaottaviani/" target="_blank">
         <i class="fab fa-linkedin-in fa-2x"></i>
       </a>
-      <a href="https://docs.google.com/document/d/1Oo7dxyvFD4rnVWkhZn1wP6BzO_lNRR_iGHxegOg6Dfw/edit?usp=sharing" target="_blank">
+      <a
+        href="https://docs.google.com/document/d/1Oo7dxyvFD4rnVWkhZn1wP6BzO_lNRR_iGHxegOg6Dfw/edit?usp=sharing"
+        target="_blank"
+      >
         <i class="fas fa-file fa-2x"></i>
       </a>
       <a href="mailto:dana.ottaviani@gmail.com" target="_blank">
@@ -45,9 +50,12 @@ export default {
 <style scoped>
 .container {
   text-align: center;
-  /* position: fixed;
-    left: 50px; */
-  width: 177px;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "links"
+    "social";
+    border-bottom: 1px solid;
 }
 
 h2:hover {
@@ -56,8 +64,29 @@ h2:hover {
 
 .social {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  grid-area: social;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .social,
+  .menu-links {
+    flex-direction: column;
+  }
+
+  .container {
+    display: block;
+    border-bottom: none;
+  }
+}
+
+.menu-links {
+  grid-area: links;
+  display: flex;
+  justify-content: space-around;
 }
 
 a {
