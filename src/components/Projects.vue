@@ -7,7 +7,7 @@
 export default {
   data: function() {
     return {
-      count: 27
+      count: 10
     };
   }
 };
@@ -31,7 +31,6 @@ export default {
 
 .container div {
   border: 1px solid;
-  height: 13vh;
 }
 </style>
 
