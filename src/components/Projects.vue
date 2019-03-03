@@ -7,7 +7,7 @@
 export default {
   data: function() {
     return {
-      count: 10
+      count: 30
     };
   }
 };

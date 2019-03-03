@@ -1,32 +1,34 @@
 <template>
   <div class="container">
-    <h1>Dana
-      <br>Ottaviani
-    </h1>
-    <div class="menu-links">
-      <h2 @click="select('About')">About</h2>
-      <h2 @click="select('Skills')">Skills</h2>
-      <h2 @click="select('Projects')">Projects</h2>
-    </div>
-    <div class="social">
-      <a href="https://github.com/Dana94" target="_blank">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/danaottaviani/" target="_blank">
-        <i class="fab fa-linkedin-in fa-2x"></i>
-      </a>
-      <a
-        href="https://docs.google.com/document/d/1Oo7dxyvFD4rnVWkhZn1wP6BzO_lNRR_iGHxegOg6Dfw/edit?usp=sharing"
-        target="_blank"
-      >
-        <i class="fas fa-file fa-2x"></i>
-      </a>
-      <a href="mailto:dana.ottaviani@gmail.com" target="_blank">
-        <i class="fas fa-envelope fa-2x"></i>
-      </a>
-      <a href="https://www.freecodecamp.org/dana94" target="_blank">
-        <i class="fab fa-free-code-camp fa-2x"></i>
-      </a>
+    <div class="fixed">
+      <h1>Dana
+        <br>Ottaviani
+      </h1>
+      <div class="menu-links">
+        <h2 @click="select('About')">About</h2>
+        <h2 @click="select('Skills')">Skills</h2>
+        <h2 @click="select('Projects')">Projects</h2>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Dana94" target="_blank">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/danaottaviani/" target="_blank">
+          <i class="fab fa-linkedin-in fa-2x"></i>
+        </a>
+        <a
+          href="https://docs.google.com/document/d/1Oo7dxyvFD4rnVWkhZn1wP6BzO_lNRR_iGHxegOg6Dfw/edit?usp=sharing"
+          target="_blank"
+        >
+          <i class="fas fa-file fa-2x"></i>
+        </a>
+        <a href="mailto:dana.ottaviani@gmail.com" target="_blank">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.freecodecamp.org/dana94" target="_blank">
+          <i class="fab fa-free-code-camp fa-2x"></i>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -80,6 +82,11 @@ h2:hover {
   .container {
     display: block;
     border-bottom: none;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 25%;
   }
 }
 
