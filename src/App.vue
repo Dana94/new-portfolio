@@ -2,7 +2,7 @@
   <div id="app">
     <Menu></Menu>
     <component :is="selected"></component>
-    <i class="fas fa-arrow-circle-up" @click="scrollUp"></i>
+    <i class="fas fa-arrow-circle-up" @click="scrollUp" v-show="scrolled"></i>
   </div>
 </template>
 
@@ -18,7 +18,8 @@ export default {
   name: "app",
   data() {
     return {
-      selected: "Projects" //default
+      selected: "Projects", //default
+      scrolled: false,
     };
   },
   components: {
@@ -31,13 +32,22 @@ export default {
     EventBus.$on("new-link", selected => {
       this.selected = selected;
     });
+    setInterval(()=> {
+      // check if user has scolled down the page
+      if(window.scrollY > 0) {
+        this.scrolled = true;
+      } else {
+        this.scrolled = false;
+      }
+    }, 100);
+    
   },
   methods: {
     scrollUp: function() {
       window.scroll({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
       });
     }
   }
