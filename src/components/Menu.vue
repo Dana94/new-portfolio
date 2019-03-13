@@ -1,3 +1,4 @@
+// use directives for focus
 <template>
   <div class="container">
     <div class="fixed">
@@ -105,7 +106,8 @@ i {
   margin-bottom: 1rem;
 }
 
-.fa-linkedin-in:hover {
+.fa-linkedin-in:hover,
+.fa-linkedin-in:focus {
   color: #0077b5;
 }
 
